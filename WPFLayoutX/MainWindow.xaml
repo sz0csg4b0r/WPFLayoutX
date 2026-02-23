@@ -38,5 +38,63 @@
                     Foreground="White" />
             </WrapPanel>
         </TabItem>
+        <TabItem Header="StackPanel elrendezés">
+            <StackPanel>
+                <Button Width="200" Content="Gomb magaság értékkel" Background="Gold" Height="100"></Button>
+                <TextBlock Text="Ez egy hosszú szöveg, amely nagyon rövid is lehetne de inkább hosszú szeretett volna lenni" FontSize="30" TextWrapping="Wrap"></TextBlock>
+                <Button Height="100" FontSize="20">Gomb szélesség nélkül</Button>
+
+            </StackPanel>
+        </TabItem>
+        <TabItem Header="DockPanel elrendezés">
+            <DockPanel>
+                <TextBlock FontSize="22" Text="Ez egy header szöveg" Background="Pink" 
+                           DockPanel.Dock="Top" ></TextBlock>
+                <TextBlock 
+                    FontSize="22" 
+                    Text="Ez egy footer szöveg" 
+                    Background="MintCream" 
+                    DockPanel.Dock="Bottom">
+                </TextBlock>
+                <ListView DockPanel.Dock="Left" Width="180">
+                    <ListViewItem>
+                        <Image Source="https://cdn.pixabay.com/photo/2015/03/04/12/59/bells-flower-658751_1280.jpg" Width="160" ></Image>
+                    </ListViewItem>
+                </ListView>
+                <ListBox FontSize="24" Background="Goldenrod" DockPanel.Dock="Right">
+                    <ListBoxItem Background="Yellow">Alma</ListBoxItem>
+                    <ListBoxItem Background="Blue">Körte</ListBoxItem>
+                    <ListBoxItem Background="Green">Krumpli</ListBoxItem>
+                    <ListBoxItem Background="Red">Kazán</ListBoxItem>
+                    <ListBoxItem Background="Pink">Tégla</ListBoxItem>
+                </ListBox>
+                
+            </DockPanel>
+        </TabItem>
+        <TabItem Header=" Grid elrendezés">
+            <Grid ShowGridLines="True">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3*"></ColumnDefinition>
+                    <ColumnDefinition Width="2*"></ColumnDefinition>
+                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="2*"></RowDefinition>
+                    <RowDefinition Height="1*"></RowDefinition>
+                    <RowDefinition Height="4*"></RowDefinition>
+                    <RowDefinition Height="1*"></RowDefinition>
+                    <RowDefinition Height="2*"></RowDefinition>
+
+
+                </Grid.RowDefinitions>
+                <Button 
+                    Grid.Column="2"
+                    Grid.Row="2"
+                    Background="MidnightBlue" Foreground="White" Content="Ez egy gomb"> </Button>
+                <TextBox Text="Ide írhatsz szöveget"></TextBox>
+
+            </Grid>
+            
+        </TabItem>
     </TabControl>
 </Window>
