@@ -97,17 +97,19 @@
 
         </TabItem>
         <TabItem Header="Canvas elrendezés">
-            <Canvas Background="Cornsilk">
+            <Canvas Background="White">
                 <Ellipse Width="200" Height="200"
          Fill="Goldenrod"
             Canvas.Left="297"
             Canvas.Top="49" HorizontalAlignment="Center" VerticalAlignment="Top"
          ></Ellipse>
-                <Rectangle Width="300"
-                           Height="327" 
+                <Rectangle Width="274"
+                           RadiusX="50"
+                           RadiusY="50"
+                           Height="326" 
                            Fill="MidnightBlue"
-                           Canvas.Left="64"
-                           Canvas.Top="36" RenderTransformOrigin="0.5,0.5"
+                           Canvas.Left="77"
+                           Canvas.Top="49" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" VerticalAlignment="Top"
                            >
                     <Rectangle.RenderTransform>
                         <TransformGroup>
@@ -134,15 +136,15 @@
                 <Button>2</Button>
                 <Button>3</Button>
                 <Button>4</Button>
-                
+
                 <Button>5</Button>
                 <Button>6</Button>
                 <Button>7</Button>
                 <Button>8</Button>
                 <TextBlock>asdfasfasd</TextBlock>
-                
+
             </UniformGrid>
         </TabItem>
-        
+
     </TabControl>
 </Window>
